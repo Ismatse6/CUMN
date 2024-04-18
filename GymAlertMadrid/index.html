@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sitename - Sitename helps you connect and share with the people in your life.</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/awesome-bootstrap-checkbox.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+      </head>
+      <body>
+      <span class="header-ribbon">
+      <form id="loginForm" class="container-fluid" method="POST" >
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-centered">
+                <div class="login-panel">
+                    <h4 class="login-panel-title">Sitename</h4>
+                    <p class="login-panel-tagline">Sitename helps you connect and share with the people in your life.</p>
+                    <div class="login-panel-section">
+                        <div class="form-group">
+                            <div class="input-group margin-bottom-sm">
+                                <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
+                                <input  name ="email" id="email" class="form-control" type="email" placeholder="Email address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                                <input name="password" id="password" class="form-control"  type="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="checkbox checkbox-circle checkbox-success checkbox-small">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Keep me logged in</label>
+                            
+                        </div>
+                    </div>
+                    <div class="login-panel-section">
+                        <button type="submit"  onclick="login()"  class="btn btn-default" value="enviar"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> Login</button> 
+                    </div>
+                </div>
+            </div>
+          </div>
+          <input type="hidden" name="_next" value="http://localhost:3000/"> 
+        </form>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <script > 
+        
+        function login() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            // Aquí puedes usar las variables email y password como desees
+            console.log('Email:', email);
+            console.log('Password:', password);
+            // Puedes enviarlos a un servidor, procesarlos localmente, etc.
+    
+            return{email, password};
+            module.exports ={login};
+        }</script>
+
+
+      </body>
+    </html>

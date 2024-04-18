@@ -1,0 +1,26 @@
+{
+  "name": "gymalertmadrid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "awesome-bootstrap-checkbox": "^1.0.1",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "nodemon": "^3.1.0",
+    "prop-types": "^15.8.1",
+    "puppeteer": "^22.6.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2"
+  }
+}
