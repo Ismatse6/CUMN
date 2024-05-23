@@ -1,20 +1,26 @@
-Simple Responsive Login Page - Template
+Práctica cumn web scraping
 ===================
 
 ![Preview of the template](https://raw.githubusercontent.com/truekasun/Simple-Responsive-Login-Page/master/preview.png)
 
-**Simple Responsive Login Page** template is initially designed to a theme of phpFox social networking script as a landing page. This template is only the front-end designed using [Twitter-Bootstrap](http://getbootstrap.com/), [FontAwesome](http://fontawesome.io/) and [Awesome Bootstrap Checkbox](https://github.com/flatlogic/awesome-bootstrap-checkbox) and not containing any backend processes.
+
 
 ---------
 
-> **The MIT License (MIT)** 
-> 
-> Copyright (c) 2016, Kasun Jayarathna
-> 
-> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+## Características
 
->The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+- **Receptiva y adaptable**: Diseñada para verse bien y funcionar correctamente en una variedad de dispositivos y tamaños de pantalla, incluyendo dispositivos móviles, tabletas y computadoras de escritorio.
+  
+- **Diseño atractivo**: Utiliza la biblioteca FontAwesome para iconografía visual y tiene un diseño limpio y moderno.
 
->THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+- **Facilidad de uso**: La página de inicio de sesión es fácil de entender y usar para los usuarios finales.
+
+## Uso
+
+1. **Descargar la plantilla**: Puedes descargar la plantilla directamente desde el repositorio en GitHub o clonar el repositorio en tu máquina local.
+
+2. **Personalización**: Puedes personalizar la plantilla según las necesidades de tu proyecto. Esto incluye cambiar colores, agregar campos adicionales, o integrarla con tu backend existente.
+
+3. **Integración con tu backend**: Esta plantilla es solo el frontend y no contiene ningún proceso backend. Debes integrarla con tu propio backend para que funcione correctamente.
 
 ---------
