@@ -1,16 +1,19 @@
 
 const puppeteer = require("puppeteer");
 const cheerio = require('cheerio');
+const bodyParser = require('body-parser');
 const fs = require('fs');
-navigateWebPage();
 
-async function navigateWebPage() {
+
+async function navigateWebPage(email, password) {
 
   
-  const email = 'lowiXD@hotmail.com';
-  const password = 'TnjFFgJh';
+  
 
-  //const datos = login(email, password);
+  console.log('app',email, password);
+  
+
+  
   const browser = await puppeteer.launch({
     headless: false,
   });
@@ -63,42 +66,16 @@ async function navigateWebPage() {
 
     const html = await page.content();
 
-   
-
-  
-
-
-// Esperar a que el elemento ul con la clase 'media-list clearfix' esté presente en la página
-//await page.waitForSelector('ul.media-list.clearfix');
-
-// Obtener la lista de elementos li que tienen la clase 'media.pull-left'
-//const liElements = await page.$$('ul.media-list.clearfix li.media.pull-left');
-
-// Iterar sobre cada elemento y hacer clic en ellos
-/*for (const liElement of liElements) {
-  
-     await liElement.click();
-    
-    new Promise(resolve => setTimeout(resolve, 1000));
-
-   
-
-    
-
-
-    
-}*/
 const $ = cheerio.load(html);
 const lis = $('#ContentFixedSection_uAltaEventos_uCentrosSeleccionar_divCentros > ul > li');
-
+let outputHtml = '<html><head><title>Datos Extraídos</title></head><body>';
 
   for (let i = 0; i < lis.length; i++) {
     // Obtener el texto del elemento li actual
     const texto = $(lis[i]).text();
     console.log('Texto del elemento li:', texto);
-
+    outputHtml += `<p>- ${texto}</p>`;
     await page.waitForSelector('#ContentFixedSection_uAltaEventos_uCentrosSeleccionar_divCentros > ul > li:nth-child(' + (i + 1) + ')');
-    //await page.click('#ContentFixedSection_uAltaEventos_uCentrosSeleccionar_divCentros > ul > li:nth-child(' + (i + 1) + ')');
     const los = $('#ContentFixedSection_uAltaEventos_uAltaEventosFechas_divRecintos > ul > li');
     for (let i = 0; i < los.length; i++) {
       
@@ -110,16 +87,20 @@ const lis = $('#ContentFixedSection_uAltaEventos_uCentrosSeleccionar_divCentros 
 
     }
     console.log('Clic realizado en el elemento li número', i + 1);
-   
+    
+
+  
     
     
 }   
   
-  
+outputHtml += '</body></html>';
+   
+fs.writeFileSync('output.html', outputHtml); 
 }
 
 
-
+module.exports = { navigateWebPage };
 
 
 

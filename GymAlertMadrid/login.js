@@ -1,7 +1,7 @@
 function login(email, password) {
 
-     email = 'example@email.com';
-     password = 'password123';
+    const email = 'lowiXD@hotmail.com';
+    const password = 'TnjFFgJh';
     
     console.log('Email:', email);
     console.log('Password:', password);
